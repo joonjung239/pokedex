@@ -7,8 +7,8 @@ import Pokedex from "./components/Pokedex";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import PokemonPage from "./components/PokemonPage"
-import TeamPokemon from "./components/TeamPokemon"
 import Battle from "./components/Battle"
+import Team from "./components/Team";
 
 function App() {
 
@@ -54,7 +54,7 @@ function App() {
               />
               <Route
               path="/my-teams" 
-              element={<TeamPokemon pokemon={pokemonData}/>}
+              element={<Team pokemon={pokemonData}/>}
               />
               <Route
               path="/battle" 

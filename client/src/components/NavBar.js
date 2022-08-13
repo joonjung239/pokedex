@@ -17,6 +17,8 @@ function NavBar({ user, setUser }) {
       
       <Link to="/">HOME</Link>
       <Link to="/pokemon-list">POKÉDEX</Link>
+      <Link to="/my-teams">POKÉMON TEAM</Link>
+      <Link to="/battle">BATTLE</Link>
       </div>
       <div>
         {user ? (

@@ -2,13 +2,13 @@
 
 puts "Getting Poke Data"
 
+User.create!(username: 'foo',
+             password_digest: 'foobar' )
 
 Pokemon.create!(
     species: "Bulbasaur",
-    types: [
-        "Grass",
-        "Poison",
-      ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
     stat_hp: 45,
@@ -22,10 +22,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Ivysaur",
-    types: [
-        "Grass",
-        "Poison",
-      ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png",
     stat_hp: 60,
@@ -39,10 +37,8 @@ Pokemon.create!(
          
 Pokemon.create!(
     species: "Venusaur",
-    types: [
-        "Grass",
-        "Poison",
-      ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
     stat_hp: 80,
@@ -56,9 +52,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Charmander",
-    types: [
-        "Fire",
-      ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png",
     stat_hp: 39,
@@ -72,9 +66,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Charmeleon",
-    types: [
-        "Fire",
-      ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/5.png",
     stat_hp: 58,
@@ -88,10 +80,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Charizard",
-    types: [
-        "Fire",
-        "Flying",
-      ],
+    type1:"Fire",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
     stat_hp: 78,
@@ -105,9 +95,7 @@ Pokemon.create!(
    
 Pokemon.create!(
     species: "Squirtle",
-    types: [
-        "Water",
-      ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png",
     stat_hp: 44,
@@ -121,9 +109,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Wartortle",
-    types: [
-        "Water",
-      ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/8.png",
     stat_hp: 59,
@@ -137,9 +123,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Blastoise",
-    types: [
-        "Water",
-      ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
     stat_hp: 79,
@@ -153,9 +137,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Caterpie",
-    types: [
-        "Bug",
-      ],
+    type1:"Bug",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png",
     stat_hp: 45,
@@ -169,9 +151,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Metapod",
-    types: [
-        "Bug",
-      ],
+    type1:"Bug",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/11.png",
     stat_hp: 50,
@@ -185,10 +165,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Butterfree",
-    types: [
-        "Bug",
-        "Flying",
-      ],
+    type1:"Bug",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/12.png",
     stat_hp: 60,
@@ -202,10 +180,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Weedle",
-    types: [
-        "Bug",
-        "Poison",
-      ],
+    type1:"Bug",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png",
     stat_hp: 40,
@@ -219,10 +195,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Kakuna",
-    types: [
-        "Bug",
-        "Poison",
-      ],
+    type1:"Bug",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/14.png",
     stat_hp: 45,
@@ -236,10 +210,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Beedrill",
-    types: [
-        "Bug",
-        "Poison",
-      ],
+    type1:"Bug",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png",
     stat_hp: 65,
@@ -253,10 +225,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Pidgey",
-    types: [
-        "Normal",
-        "Flying",
-      ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png",
     stat_hp: 40,
@@ -270,10 +240,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Pidgeotto",
-    types: [
-        "Normal",
-        "Flying",
-      ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/17.png",
     stat_hp: 63,
@@ -287,10 +255,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Pidgeot",
-    types: [
-        "Normal",
-        "Flying",
-      ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/18.png",
     stat_hp: 83,
@@ -304,9 +270,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Rattata",
-    types: [
-        "Normal",
-      ],
+    type1:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png",
     stat_hp: 30,
@@ -320,9 +284,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Raticate",
-    types: [
-        "Normal",
-      ],
+    type1:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/20.png",
     stat_hp: 55,
@@ -336,10 +298,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Spearow",
-    types: [
-        "Normal",
-        "Flying",
-      ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/21.png",
     stat_hp: 40,
@@ -353,10 +313,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Fearow",
-    types: [
-        "Normal",
-        "Flying",
-      ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/22.png",
     stat_hp: 65,
@@ -370,9 +328,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Ekans",
-    types: [
-        "Poison",
-      ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/23.png",
     stat_hp: 35,
@@ -386,9 +342,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Arbok",
-    types: [
-        "Poison",
-      ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/24.png",
     stat_hp: 60,
@@ -402,9 +356,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Pikachu",
-    types: [
-        "Electric",
-      ],
+    type1:"Electric",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png",
     stat_hp: 35,
@@ -418,9 +370,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Raichu",
-    types: [
-        "Electric",
-      ],
+    type1:"Electric",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/26.png",
     stat_hp: 60,
@@ -434,9 +384,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Sandshrew",
-    types: [
-        "Ground",
-      ],
+    type1:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/27.png",
     stat_hp: 50,
@@ -450,9 +398,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Sandslash",
-    types: [
-        "Ground",
-      ],
+    type1:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/28.png",
     stat_hp: 75,
@@ -466,9 +412,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Nidoran-F",
-    types: [
-        "Poison",
-      ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/29.png",
     stat_hp: 55,
@@ -482,9 +426,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Nidorina",
-    types: [
-        "Poison",
-      ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/30.png",
     stat_hp: 70,
@@ -498,10 +440,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Nidoqueen",
-    types: [
-        "Poison",
-        "Ground",
-      ],
+    type1:"Poison",
+    type2:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/31.png",
     stat_hp: 90,
@@ -515,9 +455,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Nidoran-M",
-    types: [
-        "Poison",
-      ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/32.png",
     stat_hp: 46,
@@ -531,9 +469,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Nidorino",
-    types: [
-        "Poison",
-      ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/33.png",
     stat_hp: 61,
@@ -547,10 +483,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Nidoking",
-    types: [
-        "Poison",
-        "Ground",
-      ],
+    type1:"Poison",
+    type2:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/34.png",
     stat_hp: 81,
@@ -564,9 +498,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Clefairy",
-    types: [
-        "Fairy",
-      ],
+    type1:"Fairy",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/35.png",
     stat_hp: 70,
@@ -580,9 +512,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Clefable",
-    types: [
-        "Fairy",
-      ],
+    type1:"Fairy",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/36.png",
     stat_hp: 95,
@@ -596,9 +526,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Vulpix",
-    types: [
-        "Fire",
-      ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/37.png",
     stat_hp: 38,
@@ -612,9 +540,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Ninetales",
-    types: [
-        "Fire",
-      ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/38.png",
     stat_hp: 73,
@@ -628,10 +554,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Jigglypuff",
-    types: [
-        "Fairy",
-        "Normal",
-      ],
+    type1:"Fairy",
+    type2:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/39.png",
     stat_hp: 115,
@@ -645,10 +569,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Wigglytuff",
-    types: [
-        "Fairy",
-        "Normal",
-      ],
+    type1:"Fairy",
+    type2:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/40.png",
     stat_hp: 140,
@@ -662,10 +584,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Zubat",
-    types: [
-        "Poison",
-        "Flying",
-      ],
+    type1:"Poison",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/41.png",
     stat_hp: 40,
@@ -679,10 +599,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Golbat",
-    types: [
-        "Poison",
-        "Flying",
-      ],
+    type1:"Poison",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/42.png",
     stat_hp: 75,
@@ -696,10 +614,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Oddish",
-    types: [
-        "Grass",
-        "Poison",
-      ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/43.png",
     stat_hp: 45,
@@ -713,10 +629,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Gloom",
-    types: [
-        "Grass",
-        "Poison",
-      ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/44.png",
     stat_hp: 60,
@@ -730,10 +644,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Vileplume",
-    types: [
-        "Grass",
-        "Poison",
-      ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/45.png",
     stat_hp: 75,
@@ -747,10 +659,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Paras",
-    types: [
-        "Bug",
-        "Grass",
-      ],
+    type1:"Bug",
+    type2:"Grass",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/46.png",
     stat_hp: 35,
@@ -764,10 +674,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Parasect",
-    types: [
-        "Bug",
-        "Grass",
-      ],
+    type1:"Bug",
+    type2:"Grass",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/47.png",
     stat_hp: 60,
@@ -781,10 +689,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Venonat",
-    types: [
-        "Bug",
-        "Poison",
-      ],
+    type1:"Bug",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/48.png",
     stat_hp: 60,
@@ -798,10 +704,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Venomoth",
-    types: [
-        "Bug",
-        "Poison",
-      ],
+    type1:"Bug",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/49.png",
     stat_hp: 70,
@@ -815,9 +719,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Diglett",
-    types: [
-        "Ground",
-      ],
+    type1:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/50.png",
     stat_hp: 10,
@@ -831,9 +733,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Dugtrio",
-    types: [
-        "Ground",
-      ],
+    type1:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/51.png",
     stat_hp: 35,
@@ -847,9 +747,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Meowth",
-    types: [
-        "Normal",
-      ],
+    type1:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/52.png",
     stat_hp: 40,
@@ -863,9 +761,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Persian",
-    types: [
-        "Normal",
-      ],
+    type1:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/53.png",
     stat_hp: 65,
@@ -879,9 +775,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Psyduck",
-    types: [
-        "Water",
-      ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/54.png",
     stat_hp: 50,
@@ -895,9 +789,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Golduck",
-    types: [
-        "Water",
-      ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/55.png",
     stat_hp: 80,
@@ -911,9 +803,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Mankey",
-    types: [
-        "Fighting",
-      ],
+    type1:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/56.png",
     stat_hp: 40,
@@ -927,9 +817,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Primeape",
-    types: [
-        "Fighting",
-      ],
+    type1:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/57.png",
     stat_hp: 65,
@@ -943,9 +831,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Growlithe",
-    types: [
-        "Fire",
-      ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/58.png",
     stat_hp: 55,
@@ -959,9 +845,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Arcanine",
-    types: [
-        "Fire",
-      ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/59.png",
     stat_hp: 90,
@@ -975,9 +859,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Poliwag",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/60.png",
     stat_hp: 40,
@@ -991,9 +873,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Poliwhirl",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/61.png",
     stat_hp: 65,
@@ -1007,10 +887,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Poliwrath",
-    types: [
-        "Water",
-        "Fighting",
-    ],
+    type1:"Water",
+    type2:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/62.png",
     stat_hp: 90,
@@ -1024,9 +902,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Abra",
-    types: [
-        "Psychic",
-    ],
+    type1:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/63.png",
     stat_hp: 25,
@@ -1040,9 +916,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Kadabra",
-    types: [
-        "Psychic",
-    ],
+    type1:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/64.png",
     stat_hp: 40,
@@ -1056,9 +930,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Alakazam",
-    types: [
-        "Psychic",
-    ],
+    type1:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/65.png",
     stat_hp: 55,
@@ -1072,9 +944,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Machop",
-    types: [
-        "Fighting",
-    ],
+    type1:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/66.png",
     stat_hp: 70,
@@ -1088,9 +958,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Machoke",
-    types: [
-        "Fighting",
-    ],
+    type1:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/67.png",
     stat_hp: 80,
@@ -1104,9 +972,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Machamp",
-    types: [
-        "Fighting",
-    ],
+    type1:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/68.png",
     stat_hp: 90,
@@ -1120,10 +986,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Bellsprout",
-    types: [
-        "Grass",
-        "Poison",
-    ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/69.png",
     stat_hp: 50,
@@ -1137,10 +1001,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Weepinbell",
-    types: [
-        "Grass",
-        "Poison",
-    ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/70.png",
     stat_hp: 65,
@@ -1154,10 +1016,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Victreebel",
-    types: [
-        "Grass",
-        "Poison",
-    ],
+    type1:"Grass",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/71.png",
     stat_hp: 80,
@@ -1171,10 +1031,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Tentacool",
-    types: [
-        "Water",
-        "Poison",
-    ],
+    type1:"Water",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/72.png",
     stat_hp: 40,
@@ -1188,10 +1046,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Tentacruel",
-    types: [
-        "Water",
-        "Poison",
-    ],
+    type1:"Water",
+    type2:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/73.png",
     stat_hp: 80,
@@ -1205,10 +1061,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Geodude",
-    types: [
-        "Rock",
-        "Ground",
-    ],
+    type1:"Rock",
+    type2:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/74.png",
     stat_hp: 40,
@@ -1222,10 +1076,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Graveler",
-    types: [
-        "Rock",
-        "Ground",
-    ],
+    type1:"Rock",
+    type2:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/75.png",
     stat_hp: 55,
@@ -1239,10 +1091,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Golem",
-    types: [
-        "Rock",
-        "Ground",
-    ],
+    type1:"Rock",
+    type2:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/76.png",
     stat_hp: 80,
@@ -1256,9 +1106,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Ponyta",
-    types: [
-        "Fire",
-    ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/77.png",
     stat_hp: 50,
@@ -1272,9 +1120,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Rapidash",
-    types: [
-        "Fire",
-    ],
+    type1:"Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/78.png",
     stat_hp: 65,
@@ -1288,10 +1134,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Slowpoke",
-    types: [
-        "Water",
-        "Psychic",
-    ],
+    type1:"Water",
+    type2:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/79.png",
     stat_hp: 90,
@@ -1305,10 +1149,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Slowbro",
-    types: [
-        "Water",
-        "Psychic",
-    ],
+    type1:"Water",
+    type2:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/80.png",
     stat_hp: 95,
@@ -1322,10 +1164,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Magnemite",
-    types: [
-        "Electric",
-        "Steel",
-    ],
+    type1:"Electric",
+    type2:"Steel",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/81.png",
     stat_hp: 25,
@@ -1339,10 +1179,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Magneton",
-    types: [
-        "Electric",
-        "Steel",
-    ],
+    type1:"Electric",
+    type2:"Steel",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/82.png",
     stat_hp: 50,
@@ -1356,10 +1194,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Farfetchd",
-    types: [
-        "Normal",
-        "Flying",
-    ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/83.png",
     stat_hp: 52,
@@ -1373,10 +1209,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Doduo",
-    types: [
-        "Normal",
-        "Flying",
-    ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/84.png",
     stat_hp: 35,
@@ -1390,10 +1224,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Dodrio",
-    types: [
-        "Normal",
-        "Flying",
-    ],
+    type1:"Normal",
+    type2:"Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/85.png",
     stat_hp: 60,
@@ -1407,9 +1239,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Seel",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/86.png",
     stat_hp: 65,
@@ -1423,10 +1253,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Dewgong",
-    types: [
-        "Water",
-        "Ice",
-    ],
+    type1:"Water",
+    type2: "Ice",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/87.png",
     stat_hp: 90,
@@ -1440,9 +1268,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Grimer",
-    types: [
-        "Poison",
-    ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/88.png",
     stat_hp: 80,
@@ -1456,9 +1282,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Muk",
-    types: [
-        "Poison",
-    ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/89.png",
     stat_hp: 105,
@@ -1472,9 +1296,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Shellder",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/90.png",
     stat_hp: 30,
@@ -1488,10 +1310,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Cloyster",
-    types: [
-        "Water",
-        "Ice",
-    ],
+    type1:"Water",
+    type2: "Ice",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/91.png",
     stat_hp: 50,
@@ -1505,10 +1325,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Gastly",
-    types: [
-        "Ghost",
-        "Poison",
-    ],
+    type1:"Ghost",
+    type2: "Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/92.png",
     stat_hp: 30,
@@ -1522,10 +1340,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Haunter",
-    types: [
-        "Ghost",
-        "Poison",
-    ],
+    type1:"Ghost",
+    type2: "Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/93.png",
     stat_hp: 45,
@@ -1539,10 +1355,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Gengar",
-    types: [
-        "Ghost",
-        "Poison",
-    ],
+    type1:"Ghost",
+    type2: "Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/94.png",
     stat_hp: 60,
@@ -1556,10 +1370,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Onix",
-    types: [
-        "Rock",
-        "Ground",
-    ],
+    type1:"Rock",
+    type2: "Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/95.png",
     stat_hp: 35,
@@ -1573,9 +1385,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Drowzee",
-    types: [
-        "Psychic",
-    ],
+    type1:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/96.png",
     stat_hp: 60,
@@ -1589,9 +1399,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Hypno",
-    types: [
-        "Psychic",
-    ],
+    type1:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/97.png",
     stat_hp: 85,
@@ -1605,9 +1413,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Krabby",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/98.png",
     stat_hp: 30,
@@ -1621,9 +1427,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Kingler",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/99.png",
     stat_hp: 55,
@@ -1637,9 +1441,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Voltorb",
-    types: [
-        "Electric",
-    ],
+    type1:"Electric",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/100.png",
     stat_hp: 40,
@@ -1653,9 +1455,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Electrode",
-    types: [
-        "Electric",
-    ],
+    type1:"Electric",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/101.png",
     stat_hp: 60,
@@ -1669,10 +1469,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Exeggcute",
-    types: [
-        "Grass",
-        "Psychic",
-    ],
+    type1:"Grass",
+    type2:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/102.png",
     stat_hp: 60,
@@ -1686,10 +1484,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Exeggutor",
-    types: [
-        "Grass",
-        "Psychic",
-    ],
+    type1:"Grass",
+    type2:"Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/103.png",
     stat_hp: 95,
@@ -1703,9 +1499,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Cubone",
-    types: [
-        "Ground",
-    ],
+    type1:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/104.png",
     stat_hp: 50,
@@ -1719,9 +1513,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Marowak",
-    types: [
-        "Ground",
-    ],
+    type1:"Ground",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/105.png",
     stat_hp: 60,
@@ -1735,9 +1527,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Hitmonlee",
-    types: [
-        "Fighting",
-    ],
+    type1:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/106.png",
     stat_hp: 50,
@@ -1751,9 +1541,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Hitmonchan",
-    types: [
-        "Fighting",
-    ],
+    type1:"Fighting",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/107.png",
     stat_hp: 50,
@@ -1767,9 +1555,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Lickitung",
-    types: [
-        "Normal",
-    ],
+    type1:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/108.png",
     stat_hp: 90,
@@ -1783,9 +1569,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Koffing",
-    types: [
-        "Poison",
-    ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/109.png",
     stat_hp: 40,
@@ -1799,9 +1583,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Weezing",
-    types: [
-        "Poison",
-    ],
+    type1:"Poison",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/110.png",
     stat_hp: 65,
@@ -1815,10 +1597,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Rhyhorn",
-    types: [
-        "Ground",
-        "Rock",
-    ],
+    type1:"Ground",
+    type2: "Rock",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/111.png",
     stat_hp: 80,
@@ -1832,10 +1612,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Rhydon",
-    types: [
-        "Ground",
-        "Rock",
-    ],
+    type1:"Ground",
+    type2: "Rock",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/112.png",
     stat_hp: 105,
@@ -1849,9 +1627,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Chansey",
-    types: [
-        "Normal",
-    ],
+    type1:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/113.png",
     stat_hp: 250,
@@ -1865,9 +1641,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Tangela",
-    types: [
-        "Grass",
-    ],
+    type1:"Grass",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/114.png",
     stat_hp: 65,
@@ -1881,9 +1655,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Kangaskhan",
-    types: [
-        "Normal",
-    ],
+    type1:"Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/115.png",
     stat_hp: 105,
@@ -1897,9 +1669,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Horsea",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/116.png",
     stat_hp: 30,
@@ -1913,9 +1683,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Seadra",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/117.png",
     stat_hp: 55,
@@ -1929,9 +1697,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Goldeen",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/118.png",
     stat_hp: 45,
@@ -1945,9 +1711,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Seaking",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/119.png",
     stat_hp: 80,
@@ -1961,9 +1725,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Staryu",
-    types: [
-        "Water",
-    ],
+    type1:"Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/120.png",
     stat_hp: 30,
@@ -1977,10 +1739,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Starmie",
-    types: [
-        "Water",
-        "Psychic",
-    ],
+    type1:"Water",
+    type2: "Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/121.png",
     stat_hp: 60,
@@ -1994,9 +1754,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Mr.Mime",
-    types: [
-        "Psychic",
-    ],
+    type1: "Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/122.png",
     stat_hp: 40,
@@ -2010,10 +1768,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Scyther",
-    types: [
-        "Bug",
-        "Flying",
-    ],
+    type1: "Bug",
+    type2: "Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/123.png",
     stat_hp: 70,
@@ -2027,10 +1783,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Jynx",
-    types: [
-        "Ice",
-        "Psychic",
-    ],
+    type1: "Ice",
+    type2: "Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/124.png",
     stat_hp: 65,
@@ -2044,9 +1798,7 @@ Pokemon.create!(
     
 Pokemon.create!(
     species: "Electabuzz",
-    types: [
-        "Electric"
-    ],
+    type1: "Electric",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/125.png",
     stat_hp: 65,
@@ -2060,9 +1812,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Magmar",
-    types: [
-        "Fire",
-    ],
+    type1: "Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/126.png",
     stat_hp: 65,
@@ -2076,9 +1826,7 @@ Pokemon.create!(
    
 Pokemon.create!(
     species: "Pinsir",
-    types: [
-        "Bug",
-    ],
+    type1: "Bug",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/127.png",
     stat_hp: 65,
@@ -2092,9 +1840,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Tauros",
-    types: [
-        "Normal",
-    ],
+    type1: "Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/128.png",
     stat_hp: 75,
@@ -2108,9 +1854,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Magikarp",
-    types: [
-        "Water",
-    ],
+    type1: "Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/129.png",
     stat_hp: 20,
@@ -2124,10 +1868,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Gyarados",
-    types: [
-        "Water",
-        "Flying",
-    ],
+    type1: "Water",
+    type2: "Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/130.png",
     stat_hp: 95,
@@ -2141,10 +1883,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Lapras",
-    types: [
-        "Water",
-        "Ice",
-    ],
+    type1: "Water",
+    type2: "Ice",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/131.png",
     stat_hp: 130,
@@ -2158,9 +1898,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Ditto",
-    types: [
-        "Normal",
-    ],
+    type1: "Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png",
     stat_hp: 48,
@@ -2174,9 +1912,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Eevee",
-    types: [
-        "Normal",
-    ],
+    type1: "Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/133.png",
     stat_hp: 55,
@@ -2190,9 +1926,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Vaporeon",
-    types: [
-        "Water",
-    ],
+    type1: "Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/134.png",
     stat_hp: 130,
@@ -2206,9 +1940,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Jolteon",
-    types: [
-        "Electric",
-    ],
+    type1: "Electric",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png",
     stat_hp: 65,
@@ -2222,9 +1954,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Flareon",
-    types: [
-        "Fire",
-    ],
+    type1: "Fire",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/136.png",
     stat_hp: 65,
@@ -2238,9 +1968,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Porygon",
-    types: [
-        "Normal",
-    ],
+    type1: "Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/137.png",
     stat_hp: 65,
@@ -2254,10 +1982,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Omanyte",
-    types: [
-        "Rock",
-        "Water",
-    ],
+    type1: "Rock",
+    type2:   "Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/138.png",
     stat_hp: 35,
@@ -2271,10 +1997,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Omastar",
-    types: [
-        "Rock",
-        "Water",
-    ],
+    type1: "Rock",
+    type2:   "Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/139.png",
     stat_hp: 70,
@@ -2288,10 +2012,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Kabuto",
-    types: [
-        "Rock",
-        "Water",
-    ],
+    type1: "Rock",
+    type2:   "Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/140.png",
     stat_hp: 30,
@@ -2305,10 +2027,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Kabutops",
-    types: [
-        "Rock",
-        "Water",
-    ],
+    type1: "Rock",
+    type2:   "Water",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/141.png",
     stat_hp: 60,
@@ -2322,10 +2042,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Aerodactyl",
-    types: [
-        "Rock",
-        "Flying",
-    ],
+    type1: "Rock",
+    type2:   "Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/142.png",
     stat_hp: 80,
@@ -2339,9 +2057,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Snorlax",
-    types: [
-        "Normal"
-    ],
+    type1: "Normal",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/143.png",
     stat_hp: 160,
@@ -2355,10 +2071,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Articuno",
-    types: [
-        "Ice",
-        "Flying",
-    ],
+    type1: "Ice",
+    type2: "Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/144.png",
     stat_hp: 90,
@@ -2372,10 +2086,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Zapdos",
-    types: [
-        "Electric",
-        "Flying",
-    ],
+    type1: "Electric",
+    type2: "Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/145.png",
     stat_hp: 90,
@@ -2389,10 +2101,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Moltres",
-    types: [
-        "Fire",
-        "Flying",
-    ],
+    type1: "Fire",
+    type2: "Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/146.png",
     stat_hp: 90,
@@ -2406,9 +2116,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Dratini",
-    types: [
-        "Dragon",
-    ],
+    type1: "Dragon",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/147.png",
     stat_hp: 41,
@@ -2422,9 +2130,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Dragonair",
-    types: [
-        "Dragon",
-    ],
+    type1: "Dragon",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/148.png",
     stat_hp: 61,
@@ -2438,10 +2144,8 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Dragonite",
-    types: [
-        "Dragon",
-        "Flying",
-    ],
+    type1: "Dragon",
+    type2: "Flying",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/149.png",
     stat_hp: 91,
@@ -2455,9 +2159,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Mewtwo",
-    types: [
-        "Psychic",
-    ],
+    type1: "Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png",
     stat_hp: 106,
@@ -2471,9 +2173,7 @@ Pokemon.create!(
 
 Pokemon.create!(
     species: "Mew",
-    types: [
-        "Psychic",
-    ],
+    type1: "Psychic",
     sprite_front: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
     sprite_back: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png",
     stat_hp: 100,

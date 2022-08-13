@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
- 
-  resources :users_pokemons
-  resources :pokemons
-  resources :users
-  get '/users/:id/pokemons', to: "users_pokemons#find_users_pokemons"
- 
+  resources :pokemons, only: [:index, :show]
+  resources :teams, only:[:index, :create, :destroy]
+  resources :users, only: [:show, :create]
+  resources :team_pokemons, only: [:create, :delete]
+
+
+
+  get '/me', to: 'users#show'
+  post '/signup', to: 'users#create'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+
+
+
+
   get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 end

@@ -2,7 +2,8 @@ class CreatePokemons < ActiveRecord::Migration[7.0]
   def change
     create_table :pokemons do |t|
       t.string :species
-      t.json :types
+      t.string :type1
+      t.string :type2
       t.string :sprite_front
       t.string :sprite_back
       t.integer :stat_speed

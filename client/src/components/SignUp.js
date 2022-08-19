@@ -28,7 +28,7 @@ const SignUp = () => {
         .then(res => {
             if(res.ok){
                 res.json().then(user => {
-                    navigate(`/login`)
+                    navigate(`/app-login`)
                 })
              }
              else {
@@ -65,7 +65,7 @@ const SignUp = () => {
        
         <input type='submit' value='SIGN-UP' />
       </form>
-      {errors? errors.map(error => <div> {error[0]} {error[1]} </div>) :null}
+      {errors? errors.map(error => <div> {"Username has already been taken."} </div>) :null}
         </div>
         </div>
     )

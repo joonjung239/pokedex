@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom"
 function Login({ setUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState([])
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -20,6 +21,9 @@ function Login({ setUser }) {
         navigate(`/`)
 
       }
+      else {
+        r.json().then(json => setErrors(Object.entries(json.errors)))
+    }
     });
   }
 
@@ -59,6 +63,7 @@ function Login({ setUser }) {
         <button type="submit">LOGIN</button>
 
       </form>
+      {errors? errors.map(error => <div> {"Please Sign-Up and Create an Account."} </div>) :null}
     </div>
     </section>
   );

@@ -1,5 +1,5 @@
 class PokemonsController < ApplicationController
-  
+  skip_before_action :authorize
     def index
       render json: Pokemon.all
     end

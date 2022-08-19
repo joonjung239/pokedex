@@ -1,15 +1,15 @@
 import PokemonCard from "./PokemonCard"
+import SearchBar from "./SearchBar"
+const Pokedex = ({pokemonData, handleSearch, search, user}) => {
 
-const Pokedex = ({pokemonData}) => {
-
-    
   
     return(
         <div className="bg">
- <h1 class="pokedex_title">Search Name or Number</h1>
+        <SearchBar pokemonData={pokemonData} handleSearch={handleSearch} search={search}></SearchBar>
+        
         <div className="card-wrapper">
             {pokemonData.map(poke =>{
-        return <PokemonCard poke={poke} key={poke.id}/>
+        return <PokemonCard poke={poke} key={poke.id} user={user}/>
     })}
         </div>
         </div>

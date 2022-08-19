@@ -7,14 +7,13 @@ import Pokedex from "./components/Pokedex";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import PokemonPage from "./components/PokemonPage"
-import Battle from "./components/Battle"
 import Team from "./components/Team";
 
 function App() {
 
   const [pokemonData, setPokemonData] = useState([]);
   const [user, setUser] = useState(null);
-
+  const [search, setSearch] =useState("")
 
   useEffect(() => {
     fetch("/pokemons")
@@ -31,6 +30,10 @@ function App() {
     });
   }, []);
 
+  const filteredPokemon = pokemonData.filter(pokemon => pokemon.species.toLowerCase().includes(search.toLowerCase()))
+  function handleSearch(e) {
+    setSearch(e.target.value)
+  }
 
   return (
     <>
@@ -46,7 +49,7 @@ function App() {
               />} />
               <Route
               path="/pokemon-list"
-              element={<Pokedex pokemonData={pokemonData} 
+              element={<Pokedex pokemonData={filteredPokemon} handleSearch={handleSearch} search={search} user={user}
               />} />
               <Route 
               path="/:id/details"
@@ -54,12 +57,8 @@ function App() {
               />
               <Route
               path="/my-teams" 
-              element={<Team pokemon={pokemonData}/>}
+              element={<Team pokemon={pokemonData} user={user}/>}
               />
-              <Route
-              path="/battle" 
-              element={<Battle />}
-              /> 
             </Routes>
           ) : (
             <Routes>

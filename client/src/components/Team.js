@@ -1,0 +1,96 @@
+import React, { useState, useEffect } from 'react';
+import { Modal, Container, Button, Form } from 'react-bootstrap';
+import { useParams, useNavigate } from "react-router-dom";
+
+
+export default function Team({user}) {
+    const [show, setShow] = useState(false);
+    const [newTeamName, setNewTeamName] = useState('');
+    const [teams, setTeams] = useState([]);
+    const [errors, setErrors] = useState('');
+    const { id } = useParams();
+
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const handleSubmit = (event) => {
+        event.persist();
+        event.preventDefault();
+        createNewTeam(newTeamName);
+        handleClose();
+    };
+
+    const handleChange = (event) => {
+        setNewTeamName(event.target.value);
+    }
+
+    const createNewTeam = (newTeamName) => {
+        fetch(`/teams`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({name: newTeamName})
+        })
+        .then(resp => resp.json())
+        .then(data => {
+            if (data.error) {
+                setErrors(...data.error)
+            } else {
+                setTeams([...teams, data])
+            }
+        });
+    };
+    
+
+
+    const handleDeleteTeam = (id) => {
+        fetch(`/teams/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(resp => resp.json())
+        .then(data => {
+            setTeams(data)
+        });
+    };
+
+    return (
+        <>
+        <Button variant="primary" onClick={handleShow}>
+            New team
+        </Button>
+
+        <Modal
+            show={show}
+            onHide={handleClose}
+        >
+            <Modal.Body>
+                <Form onSubmit={handleSubmit}>
+                    <Container className="d-flex flex-column justify-content-center">
+                        <br/>
+                        <input onChange={handleChange} value={newTeamName}
+                            placeholder="Enter new team name"
+                        />
+                        {errors ? 
+                            <span className="error">{errors}</span>
+                            :
+                            <br/>
+                        }
+                        <br/>
+                        <Modal.Footer>
+                            <Button variant="secondary" onClick={handleClose}>
+                                Close
+                            </Button>
+                            <Button type="submit" variant="primary">Create Team</Button>
+                        </Modal.Footer>
+                    </Container>
+                </Form>
+            </Modal.Body>
+        </Modal>
+        </>
+    )
+}

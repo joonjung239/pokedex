@@ -78,6 +78,10 @@ function App() {
               path="/pokemon-list"
               element={<Pokedex pokemonData={pokemonData} 
               />} />
+              <Route 
+              path="/:id/details"
+              element={<PokemonPage user = {user}/>}
+              />
             </Routes>
           )}
           

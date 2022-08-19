@@ -9,7 +9,7 @@ import useFormatPokemonId from './useFormatPokemonId';
 
         return(
             <section className="Pokemonpage">
-                <Link to={`/${id}/details`}> <img className="poke-image" src={sprite_front}  onclick={ () => user? alert("Please Log-in or Sign-Up.") : null} alt="pokemonimage"/></Link>
+                <Link to={`/${id}/details`}> <img className="poke-image" src={sprite_front} alt="pokemonimage"/></Link>
                 <br></br>
                 <small>{useFormatPokemonId(id)}</small>
                 <h4 class="pokemontitle">{species}</h4>

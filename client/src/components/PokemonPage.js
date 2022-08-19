@@ -17,11 +17,14 @@ const PokemonPage = ({ user }) => {
 },[]);
   
   return (
+    <>
+    <small>{useFormatPokemonId(id)}</small>
+    { user ? 
     <div className="bgimage2">  
       <h4 className="bigtitle">
         {species} 
       </h4>
-      <small>{useFormatPokemonId(id)}</small>
+      
       <div className="description1">
       <img className="detail-image2" src={sprite_front} alt="pokemonimage"/>
       <br></br>
@@ -38,6 +41,12 @@ const PokemonPage = ({ user }) => {
       </table>
       <button>Add Pokemon to My Team</button>
     </div>
+
+    :
+    navigate(`/app-signup`)
+    
+    }
+    </>
   );
 };
 

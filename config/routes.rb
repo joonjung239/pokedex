@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :pokemons, only: [:index, :show]
   resources :teams, only:[:index, :create, :destroy]
   resources :users, only: [:show, :create]
-  resources :team_pokemons, only: [:create, :delete]
+  resources :team_pokemons, only: [:create]
 
 
 

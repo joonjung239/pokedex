@@ -1,7 +1,7 @@
 class TeamsController < ApplicationController
     def index
       teams = @current_user.teams
-      render json: teams, each_serializer: TeamSerializer, include: '**'
+      render json: teams, each_serializer: TeamSerializer
     end
 
     

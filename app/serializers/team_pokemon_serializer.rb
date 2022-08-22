@@ -1,4 +1,3 @@
 class TeamPokemonSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :pokemon
+  attributes :id, :pokemon_id, :team_id
 end

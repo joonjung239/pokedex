@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Container, Button, Form } from 'react-bootstrap';
 import { useParams, useNavigate } from "react-router-dom";
-
+import TeamCard from "./TeamCard";
+import PokemonPage from './PokemonPage';
 
 export default function Team({user}) {
     const [show, setShow] = useState(false);
@@ -43,7 +44,11 @@ export default function Team({user}) {
         });
     };
     
-
+    useEffect(()=> {
+        fetch('/teams')
+        .then(r => r.json())
+        .then(data => setTeams(data))
+    },[])
 
     const handleDeleteTeam = (id) => {
         fetch(`/teams/${id}`, {
@@ -91,6 +96,9 @@ export default function Team({user}) {
                 </Form>
             </Modal.Body>
         </Modal>
+        {teams.map(team => {
+        return <TeamCard key={team.id} team={team} user = {user} handleDeleteTeam={handleDeleteTeam} setTeams={setTeams} />
+      })}
         </>
     )
 }

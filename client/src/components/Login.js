@@ -27,15 +27,24 @@ function Login({ setUser }) {
     });
   }
 
-
-
-
   const navigate = useNavigate()
 
-
+  const handleClick = event => {
+    console.log(event.target);
+    alert("Snorlax: 'Im so Hungry...'")
+  }
+  
   return (
     <section>
-       
+  <img src="https://cdn.discordapp.com/attachments/371136521601941504/1011480055454642176/273-2730243_pokeball-flat-png-transparent-clipart-image-poke-ball-removebg-preview_2.png"  
+    style={{   position: "absolute",
+    width: "40%",
+    left: "50%",
+    top: "50%",
+    height: "70%",
+    transform: "translate(-50%, -50%)",
+    zIndex: "-1"}}/>   
+    <img className="teamif" onClick={handleClick} src="https://66.media.tumblr.com/a5f012a2bc5a5f612c592a71c09713a3/tumblr_mrnj1lGkXQ1rfjowdo1_500.gif"></img>
     <div class="form">
     <form  className="loginbox"onSubmit={handleSubmit}>
         <h1>Login</h1>
@@ -48,7 +57,7 @@ function Login({ setUser }) {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-         <br></br>
+        <br></br>
         <br></br>
         <label  className="passwordname" htmlFor="password">Password:</label>
         <input
@@ -58,12 +67,11 @@ function Login({ setUser }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-          <br></br>
-        <br></br>
+        {errors? errors.map(error => <div> {<small>Please Sign-Up and Create an Account.</small>} </div>) :null}
         <button type="submit">LOGIN</button>
 
       </form>
-      {errors? errors.map(error => <div> {"Please Sign-Up and Create an Account."} </div>) :null}
+      
     </div>
     </section>
   );

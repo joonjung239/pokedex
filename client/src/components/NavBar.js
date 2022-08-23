@@ -11,31 +11,32 @@ function NavBar({ user, setUser }) {
   }
 
   return (
+    <section>
+      <Link to="/"><img src="https://cdn.discordapp.com/attachments/371136521601941504/1011407899102285874/image-removebg-preview.png" className="logo" alt="logo"/> </Link>
     <nav className='navbar'>
    
       <div>
       
-      <Link to="/">HOME</Link>
       <Link to="/pokemon-list">POKÉDEX</Link>
 
       </div>
       <div>
         {user ? (
           <>
-          <Link to="/my-teams">POKÉMON TEAM</Link>
-           {/* <Link to="/battle">BATTLE</Link> */}
-           <Link to="/" onClick={handleLogoutClick}>LOGOUT</Link>
+          <Link to="/my-teams">POKÉMON TEAMS</Link>
+           <Link to="/" className="logout" onClick={handleLogoutClick}>LOGOUT</Link>
            </>
         ) : (
           <>
       <Link to="/app-signup">SIGN-UP</Link>
-            <Link to="/app-login">LOGIN</Link>
+            <Link to="/app-login" className="logout">LOGIN</Link>
           </>
         )}
         
       </div>
  
     </nav>
+    </section>
   );
 }
 

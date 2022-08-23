@@ -43,9 +43,23 @@ const SignUp = () => {
         const { name, value } = e.target
         setFormData({ ...formData, [name]: value })
       }
+
+      const handleClick = event => {
+        console.log(event.target);
+        alert("Gotcha! You Caught a Dratini!")
+      }
+
     return(
         <div>
-         
+    <img src="https://cdn.discordapp.com/attachments/371136521601941504/1011480055454642176/273-2730243_pokeball-flat-png-transparent-clipart-image-poke-ball-removebg-preview_2.png"  
+    style={{   position: "absolute",
+    width: "40%",
+    left: "50%",
+    top: "50%",
+    height: "70%",
+    transform: "translate(-50%, -50%)",
+    zIndex: "-1"}}/>        
+    <img className="pokeball" onClick={handleClick} src="https://cdn.discordapp.com/attachments/371136521601941504/1011563428697088060/output-onlinegiftools.gif"></img>
     <div class="form">
     <form className="signupbox" onSubmit={onSubmit}>
     <h1>Sign-up</h1>
@@ -60,12 +74,10 @@ const SignUp = () => {
          Password:
          </label>
         <input type='password' name='password' value={password} onChange={handleChange} />
+        {errors? errors.map(error => <small>{"Username has already been taken."}</small>) :null}
         <br></br>
-        <br></br>
-       
         <input type='submit' value='SIGN-UP' />
       </form>
-      {errors? errors.map(error => <div> {"Username has already been taken."} </div>) :null}
         </div>
         </div>
     )

@@ -6,7 +6,7 @@ import useFormatPokemonId from './useFormatPokemonId';
 const PokemonPage = ({ user }) => {
   const [pokeDatas, setPokeDatas] = useState({});
   const [teams, setTeams] = useState([]);
-  const [selectedTeam, setSelectedTeam] = useState(user?.teams[0].id)
+  const [selectedTeam, setSelectedTeam] = useState(user?.teams[0]?.id)
   let navigate = useNavigate();
   const {id} = useParams()
   const { species, type1, type2, sprite_front, stat_speed, stat_special_defense, stat_special_attack, stat_defense, stat_attack, stat_hp, description } = pokeDatas;
@@ -38,7 +38,12 @@ function handleSubmit(e) {
     }),
   })
   .then(r => r.json())
-  .then(data => console.log(data))}
+  .then(data => {navigate('/my-teams')})
+  .then(ata => {alert(`Gotcha! You Caught a ${species}!`)})}
+  
+
+
+
 
 // console.log(user?.teams[0].id)
 console.log(selectedTeam)
@@ -56,7 +61,7 @@ console.log(selectedTeam)
       <div className="description1">
       <img className="detail-image2" src={sprite_front} alt="pokemonimage"/>
       <br></br>
-      <small>{type1}</small> <small>{type2}</small>
+      <small className={`${type1}`}>{type1}</small> <small className={`${type2}`}>{type2}</small>
       <p>{description}</p>
       </div>
       <table className="table">
@@ -74,12 +79,12 @@ console.log(selectedTeam)
       })}
       </select>
       <form onSubmit={handleSubmit}>
-      <button >Add to My Team</button>
+      <button>Add to My Team</button>
       </form>
     </div>
     </>
     :
-    navigate("/app-signup")
+    navigate("/app-login")
     }
     </>
   );

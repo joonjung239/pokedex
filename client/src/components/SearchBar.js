@@ -3,17 +3,17 @@ const SearchBar = ({handleSearch, search}) => {
 
 
     return(
-        <div>
+        <form className="searchinput">
          <input 
          type="text" 
-         placeholder="Search..."
+         placeholder="Search Pokemon..."
          onChange={handleSearch}
          value = {search}
          
          ></input>
     
             
-        </div>
+        </form>
     )
     
 }

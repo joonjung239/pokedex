@@ -8,13 +8,14 @@ import useFormatPokemonId from './useFormatPokemonId';
 
 
         return(
-            <section className="Pokemonpage">
+            <section className="pokemonpage">
                 <Link to={`/${id}/details`}> <img className="poke-image" src={sprite_front} alt="pokemonimage"/></Link>
                 <br></br>
-                <small>{useFormatPokemonId(id)}</small>
-                <h4 class="pokemontitle">{species}</h4>
-                <p>{type1}</p> 
-                <p>{type2}</p>
+                <small className="number">{useFormatPokemonId(id)}</small>
+                <h1 class="pokemontitle">{species}</h1>
+                <div className="typebox">
+                <small className={`${type1}`}>{type1}</small> <small className={`${type2}`}>{type2}</small>
+                </div>
                 </section>
         )
     }

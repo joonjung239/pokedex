@@ -30,17 +30,17 @@ const TeamCard = ({ team, handleDeleteTeam }) => {
       
     return(
         <div className="teamcard">
-            <h2>{team.name}</h2>
-            <i class="fa-solid fa-pen-to-square cursor-pointer text-xs" onClick={(e) => setShow(!show)}></i>
+            <h2 className="teamtitle">{team.name}</h2>
+             { favorite ? <i  onClick={() => setFavorite (!favorite)} class="fa-solid fa-star fa-2xl"></i> : <i  onClick={() => setFavorite (!favorite)} class="fa-regular fa-star fa-2xl" ></i>}    
+            <i class="fa-solid fa-pen-to-square cursor-pointer fa-2xl" onClick={(e) => setShow(!show)}></i>
+            
                 {showTeamPokemons?.map(showTeamPokemon => {
                     return (    
                     <div>
-                        <i className={ show ? "show fa-solid fa-xmark" : "hide"} onClick={(e) => handleDeletePokemon(showTeamPokemon.id)}></i>    
-                        <Link to={`/${showTeamPokemon.pokemon_id}/details`}><img className="poke-image" key={showTeamPokemon.id} src={showTeamPokemon?.pokemon?.sprite_front} alt="pokemonimage"/></Link>
+                        <i className={ show ? "show fa-solid fa-xmark fa-2xl" : "hide"} onClick={(e) => handleDeletePokemon(showTeamPokemon.id)}></i>    
+                        <Link to={`/${showTeamPokemon.pokemon_id}/details`}><img className="poke-image2" key={showTeamPokemon.id} src={showTeamPokemon?.pokemon?.sprite_front} alt="pokemonimage"/></Link>
                     </div>
                 )})}
-
-            { favorite ? <i  onClick={() => setFavorite (!favorite)} class="fa-solid fa-star"></i> : <i  onClick={() => setFavorite (!favorite)} class="fa-regular fa-star" ></i>}    
 
             <form>
             <button className="deletebutton"

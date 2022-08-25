@@ -68,30 +68,16 @@ export default function Team({user}) {
         <Button className="newteam" variant="primary" onClick={handleShow}>
             Create Team
         </Button>
+        <Modal show={show} onHide={handleClose}>
+        <Button className="fuckyou" variant="secondary" onClick={handleClose}>Close</Button>
 
-        <Modal
-            show={show}
-            onHide={handleClose}
-        >
             <Modal.Body>
-                <Form onSubmit={handleSubmit}>
+                <Form className="teamform" onSubmit={handleSubmit}>
                     <Container className="d-flex flex-column justify-content-center">
-                        <br/>
                         <input className="teamname" onChange={handleChange} value={newTeamName}
-                            placeholder="Enter new team name"
-                        />
-                        {errors ? 
-                            <span className="error">{errors}</span>
-                            :
-                            <br/>
-                        }
-                        <br/>
-                        <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
-                                Close
-                            </Button>
+                            placeholder="Enter new team name..."/>
+          
                             <Button type="submit" variant="primary">Create</Button>
-                        </Modal.Footer>
                     </Container>
                 </Form>
             </Modal.Body>

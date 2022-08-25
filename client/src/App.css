@@ -642,10 +642,11 @@ text-indent: 10px;
       border: 4px solid white;
       width: 1700px;
       margin-left: 60px;
-      margin-top: 20px;
+      margin-top: 30px;
       padding-bottom: 30px;
       border-radius: 25px;
       background-color: rgb(36, 132, 170);
+      margin-bottom: 30px;
     }
 
     .teamtitle{
@@ -705,9 +706,15 @@ color: aliceblue;
   border: 4px solid white;
   border-radius: 20px;
   margin-left: 50px;
-  margin-top: -20px;
-
+  
 }
+
+.imgdiv {
+  width: 211px;
+  display: inline-block;
+}
+
+
 
 .deletebutton {
   margin-left: 1530px;
@@ -727,3 +734,15 @@ color: aliceblue;
 .deletebutton:hover{
   cursor: pointer;
 }
+
+.fa-xmark{
+  position: absolute;
+  margin-left: 66px;
+  color: #000000;
+  margin-top: 23px;
+}
+
+.fa-xmark:hover{
+  cursor: pointer;
+}
+

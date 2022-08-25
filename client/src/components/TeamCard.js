@@ -36,8 +36,8 @@ const TeamCard = ({ team, handleDeleteTeam }) => {
             
                 {showTeamPokemons?.map(showTeamPokemon => {
                     return (    
-                    <div>
-                        <i className={ show ? "show fa-solid fa-xmark fa-2xl" : "hide"} onClick={(e) => handleDeletePokemon(showTeamPokemon.id)}></i>    
+                    <div className="imgdiv">
+                        <i className={ show ? "show fa-solid fa-xmark fa-xl" : "hide"} onClick={(e) => handleDeletePokemon(showTeamPokemon.id)}></i>    
                         <Link to={`/${showTeamPokemon.pokemon_id}/details`}><img className="poke-image2" key={showTeamPokemon.id} src={showTeamPokemon?.pokemon?.sprite_front} alt="pokemonimage"/></Link>
                     </div>
                 )})}

@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 const TeamCard = ({ team, handleDeleteTeam }) => {
     const [showTeamPokemons, setShowTeamPokemons] = useState([]);
     const [show, setShow] = useState(false);
+    const [favorite, setFavorite] = useState(false);
     
     useEffect(()=> {
         fetch(`/team_pokemons`)
@@ -38,6 +39,9 @@ const TeamCard = ({ team, handleDeleteTeam }) => {
                         <Link to={`/${showTeamPokemon.pokemon_id}/details`}><img className="poke-image" key={showTeamPokemon.id} src={showTeamPokemon?.pokemon?.sprite_front} alt="pokemonimage"/></Link>
                     </div>
                 )})}
+
+            { favorite ? <i  onClick={() => setFavorite (!favorite)} class="fa-solid fa-star"></i> : <i  onClick={() => setFavorite (!favorite)} class="fa-regular fa-star" ></i>}    
+
             <form>
             <button className="deletebutton"
             onClick={(e) => {return handleDeleteTeam(team.id), e.stopPropagation()}}>

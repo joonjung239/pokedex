@@ -27,6 +27,7 @@ useEffect(()=> {
 
 function handleSubmit(e) {
   e.preventDefault()
+  if (pokeDatas.length === 6) return alert("can not have more than 6")
   fetch("/team_pokemons", {
     method: "POST",
     headers: {
@@ -46,47 +47,48 @@ function handleSubmit(e) {
 
 
 // console.log(user?.teams[0].id)
-console.log(selectedTeam)
   
   return (
-    <>
-    <small>{useFormatPokemonId(id)}</small>
+    <div className="background">
+    <small className="pokenumber">{useFormatPokemonId(id)}</small>
     {user ?
-    <>
-    <div className="bgimage2">  
+    <div>
       <h4 className="bigtitle">
         {species} 
       </h4>
       
-      <div className="description1">
-      <img className="detail-image2" src={sprite_front} alt="pokemonimage"/>
+      <div>
+      <img className="pokemonimage" src={sprite_front} alt="pokemonimage"/>
       <br></br>
+      <div className="typebox1">
       <small className={`${type1}`}>{type1}</small> <small className={`${type2}`}>{type2}</small>
-      <p>{description}</p>
+      <p className="description">{description}</p>
+      </div>
       </div>
       <table className="table">
-            <tr>Hp: {stat_hp}</tr>
-            <tr>Spd: {stat_speed}</tr>
-            <tr>Atk: {stat_attack}</tr>
-            <tr>Def: {stat_defense}</tr>
-            <tr>spAtk: {stat_special_attack}</tr>
-            <tr>spDef: {stat_special_defense}</tr>
+            <tr className="hp">Hp: {stat_hp}</tr>
+            <tr className="spd">Spd: {stat_speed}</tr>
+            <tr className="atk">Atk: {stat_attack}</tr>
+            <tr className="def">Def: {stat_defense}</tr>
+            <tr className="spatk">spAtk: {stat_special_attack}</tr>
+            <tr className="spdef">spDef: {stat_special_defense}</tr>
       </table>
       <br></br>
-      <select name="selectList" id="selectList" value={selectedTeam} onChange={(e) => setSelectedTeam(e.target.value)} >
+      <div className="teamselection">
+      <select className="selections" name="selectList" id="selectList" value={selectedTeam} onChange={(e) => setSelectedTeam(e.target.value)} >
       {teams.map(team => {
-        return <option name="selectedTeam" value={team.id}> {team.name} </option>
+        return <option className="options" name="selectedTeam" value={team.id}> {team.name} </option>
       })}
       </select>
-      <form onSubmit={handleSubmit}>
+      <form className="add" onSubmit={handleSubmit}>
       <button>Add to My Team</button>
       </form>
+      </div>
     </div>
-    </>
     :
     navigate("/app-login")
     }
-    </>
+    </div>
   );
 };
 

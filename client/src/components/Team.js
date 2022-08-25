@@ -65,8 +65,8 @@ export default function Team({user}) {
 
     return (
         <>
-        <Button variant="primary" onClick={handleShow}>
-            New team
+        <Button className="newteam" variant="primary" onClick={handleShow}>
+            Create Team
         </Button>
 
         <Modal
@@ -77,7 +77,7 @@ export default function Team({user}) {
                 <Form onSubmit={handleSubmit}>
                     <Container className="d-flex flex-column justify-content-center">
                         <br/>
-                        <input onChange={handleChange} value={newTeamName}
+                        <input className="teamname" onChange={handleChange} value={newTeamName}
                             placeholder="Enter new team name"
                         />
                         {errors ? 
@@ -90,7 +90,7 @@ export default function Team({user}) {
                             <Button variant="secondary" onClick={handleClose}>
                                 Close
                             </Button>
-                            <Button type="submit" variant="primary">Create Team</Button>
+                            <Button type="submit" variant="primary">Create</Button>
                         </Modal.Footer>
                     </Container>
                 </Form>

@@ -46,14 +46,14 @@ const SignUp = () => {
 
       const handleClick = event => {
         console.log(event.target);
-        alert("Gotcha! You Caught a Dratini!")
+        alert("Gotcha! You Caught a MewTwo!")
       }
 
     return(
         <div>
     <img src="https://cdn.discordapp.com/attachments/371136521601941504/1011480055454642176/273-2730243_pokeball-flat-png-transparent-clipart-image-poke-ball-removebg-preview_2.png"  
     style={{   position: "absolute",
-    width: "40%",
+    width: "45%",
     left: "50%",
     top: "50%",
     height: "70%",

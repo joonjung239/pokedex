@@ -5,7 +5,7 @@ const Pokedex = ({pokemonData, handleSearch, search, user}) => {
   
     return(
         <div>
-            <h2 className="searchtitle">SEARCH NAME</h2> 
+            <h2 className="searchtitle">SEARCH NAME:</h2> 
             <div className="searchbar">
             <SearchBar pokemonData={pokemonData} handleSearch={handleSearch} search={search}></SearchBar>
             </div>
